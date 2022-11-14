@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-14T04:07:41.198Z",
-    "end": "2022-11-14T04:07:51.331Z",
-    "duration": 6986,
+    "start": "2022-11-14T04:24:03.552Z",
+    "end": "2022-11-14T04:24:15.412Z",
+    "duration": 7938,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "94f51044-7603-4bbd-9f10-dcab592ad972",
+      "uuid": "945c8ddb-3800-48d7-ad5f-8086c9bfd8a2",
       "title": "",
       "fullFile": "cypress/e2e/regression/contact-us.cy.js",
       "file": "cypress/e2e/regression/contact-us.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "60bc5ec4-5746-4c72-83ee-fe7e8510ba15",
+          "uuid": "0ec8f2b0-176a-40be-99bb-970bf2681b28",
           "title": "Test contact us form via Webdriver Uni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should be able to submit via contact form",
               "fullTitle": "Test contact us form via Webdriver Uni Should be able to submit via contact form",
               "timedOut": null,
-              "duration": 5920,
+              "duration": 6889,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get('[name=\"first_name\"]').click().type(\"Samantha\");\ncy.get('[name=\"last_name\"]').click().type(\"Louw\");\ncy.get('[name=\"email\"]').click().type(\"sam@test.com\");\ncy.get('textarea.feedback-input').click().type(\"This is a message\");\ncy.get('[type=\"submit\"]').click();\ncy.get('h1').should(\"have.text\", \"Thank You for your Message!\");\ncy.url().should(\"equal\", \"https://www.webdriveruniversity.com/Contact-Us/contact-form-thank-you.html\");",
               "err": {},
-              "uuid": "2b3fdca9-ca60-4720-8c62-f2a6bbad2b7a",
-              "parentUUID": "60bc5ec4-5746-4c72-83ee-fe7e8510ba15",
+              "uuid": "f088d5e4-c493-4ea1-b125-5a12465492c7",
+              "parentUUID": "0ec8f2b0-176a-40be-99bb-970bf2681b28",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Should not be able to submit via contact form - all fields required",
               "fullTitle": "Test contact us form via Webdriver Uni Should not be able to submit via contact form - all fields required",
               "timedOut": null,
-              "duration": 1066,
+              "duration": 1049,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get('[name=\"first_name\"]').click().type(\"Samantha\");\ncy.get('[type=\"submit\"]').click();\ncy.get('body').should(\"contain.text\", \"Error: all fields are required\");",
               "err": {},
-              "uuid": "5203513d-83d9-4714-918b-7c49835e8f9c",
-              "parentUUID": "60bc5ec4-5746-4c72-83ee-fe7e8510ba15",
+              "uuid": "c004998c-1117-489f-b637-7cc3f0007d37",
+              "parentUUID": "0ec8f2b0-176a-40be-99bb-970bf2681b28",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2b3fdca9-ca60-4720-8c62-f2a6bbad2b7a",
-            "5203513d-83d9-4714-918b-7c49835e8f9c"
+            "f088d5e4-c493-4ea1-b125-5a12465492c7",
+            "c004998c-1117-489f-b637-7cc3f0007d37"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6986,
+          "duration": 7938,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -102,7 +102,7 @@
     "mochawesome": {
       "options": {
         "quiet": true,
-        "reportFilename": "mochawesome",
+        "reportFilename": "report",
         "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -115,10 +115,12 @@
       "options": {
         "id": "default",
         "reportDir": "cypress/results/mochawesome",
+        "reportFilename": "report",
         "quiet": true,
         "overwrite": false,
         "html": false,
-        "json": true
+        "json": true,
+        "charts": true
       },
       "version": "6.2.0"
     }

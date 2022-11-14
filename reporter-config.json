@@ -7,10 +7,12 @@
         "reporterEnabled": "mochawesome",
         "mochawesomeReporterOptions": {
             "reportDir": "cypress/results/mochawesome",
+            "reportFilename": "report",
             "quiet": true,
             "overwrite": false,
             "html": false,
-            "json": true
+            "json": true,
+            "charts": true
         }
     }
 }
