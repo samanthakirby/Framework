@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-14T04:24:03.552Z",
-    "end": "2022-11-14T04:24:15.412Z",
-    "duration": 7938,
+    "start": "2022-11-14T23:15:03.460Z",
+    "end": "2022-11-14T23:15:15.338Z",
+    "duration": 8333,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "945c8ddb-3800-48d7-ad5f-8086c9bfd8a2",
+      "uuid": "8fba6f17-db9c-4a5d-99e5-58784d379e96",
       "title": "",
       "fullFile": "cypress/e2e/regression/contact-us.cy.js",
       "file": "cypress/e2e/regression/contact-us.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0ec8f2b0-176a-40be-99bb-970bf2681b28",
+          "uuid": "b6fbebf1-ac43-4853-bf12-4b8e778eb141",
           "title": "Test contact us form via Webdriver Uni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should be able to submit via contact form",
               "fullTitle": "Test contact us form via Webdriver Uni Should be able to submit via contact form",
               "timedOut": null,
-              "duration": 6889,
+              "duration": 7244,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get('[name=\"first_name\"]').click().type(\"Samantha\");\ncy.get('[name=\"last_name\"]').click().type(\"Louw\");\ncy.get('[name=\"email\"]').click().type(\"sam@test.com\");\ncy.get('textarea.feedback-input').click().type(\"This is a message\");\ncy.get('[type=\"submit\"]').click();\ncy.get('h1').should(\"have.text\", \"Thank You for your Message!\");\ncy.url().should(\"equal\", \"https://www.webdriveruniversity.com/Contact-Us/contact-form-thank-you.html\");",
               "err": {},
-              "uuid": "f088d5e4-c493-4ea1-b125-5a12465492c7",
-              "parentUUID": "0ec8f2b0-176a-40be-99bb-970bf2681b28",
+              "uuid": "a6f0072a-2412-49a6-9aea-201d2c45d618",
+              "parentUUID": "b6fbebf1-ac43-4853-bf12-4b8e778eb141",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Should not be able to submit via contact form - all fields required",
               "fullTitle": "Test contact us form via Webdriver Uni Should not be able to submit via contact form - all fields required",
               "timedOut": null,
-              "duration": 1049,
+              "duration": 1089,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get('[name=\"first_name\"]').click().type(\"Samantha\");\ncy.get('[type=\"submit\"]').click();\ncy.get('body').should(\"contain.text\", \"Error: all fields are required\");",
               "err": {},
-              "uuid": "c004998c-1117-489f-b637-7cc3f0007d37",
-              "parentUUID": "0ec8f2b0-176a-40be-99bb-970bf2681b28",
+              "uuid": "aa25618c-8811-4c68-851e-445139d63e27",
+              "parentUUID": "b6fbebf1-ac43-4853-bf12-4b8e778eb141",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f088d5e4-c493-4ea1-b125-5a12465492c7",
-            "c004998c-1117-489f-b637-7cc3f0007d37"
+            "a6f0072a-2412-49a6-9aea-201d2c45d618",
+            "aa25618c-8811-4c68-851e-445139d63e27"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7938,
+          "duration": 8333,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
