@@ -7,7 +7,7 @@ beforeEach(function () {
 })
 
 describe("Test contact us form via Webdriver Uni", () => {
-    it.only("Should be able to submit via contact form", () => {
+    it("Should be able to submit via contact form", () => {
         cy.get('[name="first_name"]').click().type("Samantha");
         cy.get('[name="last_name"]').click().type("Louw");
         cy.get('[name="email"]').click().type("sam@test.com");

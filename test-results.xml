@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.889" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-11-14T03:42:32" tests="0" file="cypress/e2e/regression/contact-us.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test contact us form via Webdriver Uni" timestamp="2022-11-14T03:42:32" tests="2" time="14.854" failures="1">
+    <testcase name="Test contact us form via Webdriver Uni Should be able to submit via contact form" time="6.593" classname="Should be able to submit via contact form">
+    </testcase>
+    <testcase name="Test contact us form via Webdriver Uni Should not be able to submit via contact form - all fields required" time="0.000" classname="Should not be able to submit via contact form - all fields required">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `#contact-us &gt; .thumbnail &gt; .section-title &gt; h1`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `#contact-us > .thumbnail > .section-title > h1`, but never found it.
+    at Context.eval (webpack:///./cypress/e2e/regression/contact-us.cy.js:21:11)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
