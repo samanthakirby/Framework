@@ -18,8 +18,7 @@ describe("Test contact us form via Webdriver Uni", () => {
     })
 
     it("Should not be able to submit via contact form - all fields required", () => {
-        cy.get('#contact-us > .thumbnail > .section-title > h1').click();
-        cy.get('[name="first_name"]').click().type("Samantha");
+        cy.get('[name="first_namesss"]').click().type("Samantha");
         cy.get('[type="submit"]').click();
         cy.get('body').should("contain.text", "Error: all fields are required")
     })

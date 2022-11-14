@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2022-11-14T03:50:39.193Z",
-    "end": "2022-11-14T03:50:53.642Z",
-    "duration": 14449,
+    "start": "2022-11-14T04:09:49.235Z",
+    "end": "2022-11-14T04:10:04.139Z",
+    "duration": 14904,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "47f8d909-300f-4ff0-b70c-8b05ee551a1f",
+      "uuid": "85ede7a1-7117-4534-93a7-8d5f7fd54932",
       "title": "",
       "fullFile": "cypress/e2e/regression/contact-us.cy.js",
       "file": "cypress/e2e/regression/contact-us.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b0bf93e9-6a60-4c2b-9871-6a4061601fbc",
+          "uuid": "91018226-3a61-47a5-8dee-17825f08ffaa",
           "title": "Test contact us form via Webdriver Uni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should be able to submit via contact form",
               "fullTitle": "Test contact us form via Webdriver Uni Should be able to submit via contact form",
               "timedOut": null,
-              "duration": 6005,
+              "duration": 6500,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get('[name=\"first_name\"]').click().type(\"Samantha\");\ncy.get('[name=\"last_name\"]').click().type(\"Louw\");\ncy.get('[name=\"email\"]').click().type(\"sam@test.com\");\ncy.get('textarea.feedback-input').click().type(\"This is a message\");\ncy.get('[type=\"submit\"]').click();\ncy.get('h1').should(\"have.text\", \"Thank You for your Message!\");\ncy.url().should(\"equal\", \"https://www.webdriveruniversity.com/Contact-Us/contact-form-thank-you.html\");",
               "err": {},
-              "uuid": "29b515bd-9606-4b6a-a176-133bb84a900b",
-              "parentUUID": "b0bf93e9-6a60-4c2b-9871-6a4061601fbc",
+              "uuid": "e77ddf42-b537-46cb-a7d4-cf2de73cd740",
+              "parentUUID": "91018226-3a61-47a5-8dee-17825f08ffaa",
               "isHook": false,
               "skipped": false
             },
@@ -56,35 +56,35 @@
               "title": "Should not be able to submit via contact form - all fields required",
               "fullTitle": "Test contact us form via Webdriver Uni Should not be able to submit via contact form - all fields required",
               "timedOut": null,
-              "duration": 5209,
+              "duration": 5302,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.get('#contact-us > .thumbnail > .section-title > h1').click();\ncy.get('[name=\"first_name\"]').click().type(\"Samantha\");\ncy.get('[type=\"submit\"]').click();\ncy.get('body').should(\"contain.text\", \"Error: all fields are required\");",
+              "code": "cy.get('[name=\"first_namesss\"]').click().type(\"Samantha\");\ncy.get('[type=\"submit\"]').click();\ncy.get('body').should(\"contain.text\", \"Error: all fields are required\");",
               "err": {
-                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#contact-us > .thumbnail > .section-title > h1`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#contact-us > .thumbnail > .section-title > h1`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/regression/contact-us.cy.js:21:11)",
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[name=\"first_namesss\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[name=\"first_namesss\"]`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/regression/contact-us.cy.js:21:11)",
                 "diff": null
               },
-              "uuid": "7ba984c7-0cbf-4f93-aedf-7b010e30a69d",
-              "parentUUID": "b0bf93e9-6a60-4c2b-9871-6a4061601fbc",
+              "uuid": "cca2f805-54ef-414e-9d33-96ce0dd753dc",
+              "parentUUID": "91018226-3a61-47a5-8dee-17825f08ffaa",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "29b515bd-9606-4b6a-a176-133bb84a900b"
+            "e77ddf42-b537-46cb-a7d4-cf2de73cd740"
           ],
           "failures": [
-            "7ba984c7-0cbf-4f93-aedf-7b010e30a69d"
+            "cca2f805-54ef-414e-9d33-96ce0dd753dc"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 11214,
+          "duration": 11802,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
