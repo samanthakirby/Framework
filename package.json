@@ -168,6 +168,7 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
+    "start-json-server": "json-server --watch db.json",
     "triggerAll-headless": "npx cypress run",
     "triggerAll-headed": "npx cypress run --headed",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
